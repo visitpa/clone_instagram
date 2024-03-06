@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoriesTableViewCell" rowHeight="133" id="sgy-rM-4lY" customClass="StoriesTableViewCell" customModule="CloneInstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sgy-rM-4lY" id="sH1-09-y9j">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hza-4e-3ra">
+                        <rect key="frame" x="0.0" y="0.0" width="517" height="124"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="124" id="uKf-9b-I0F"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gOg-qJ-qh1">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35B-Df-UTc">
+                        <rect key="frame" x="0.0" y="132" width="517" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MCc-PN-RI8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="35B-Df-UTc" firstAttribute="leading" secondItem="sH1-09-y9j" secondAttribute="leading" id="7jk-df-zTB"/>
+                    <constraint firstItem="Hza-4e-3ra" firstAttribute="top" secondItem="sH1-09-y9j" secondAttribute="top" id="NMR-Bf-gQP"/>
+                    <constraint firstItem="35B-Df-UTc" firstAttribute="top" secondItem="Hza-4e-3ra" secondAttribute="bottom" constant="8" id="SVO-Oe-4Wy"/>
+                    <constraint firstAttribute="bottom" secondItem="35B-Df-UTc" secondAttribute="bottom" id="euS-nx-GEe"/>
+                    <constraint firstAttribute="trailing" secondItem="35B-Df-UTc" secondAttribute="trailing" id="mVn-Hn-eBe"/>
+                    <constraint firstItem="Hza-4e-3ra" firstAttribute="leading" secondItem="sH1-09-y9j" secondAttribute="leading" id="naX-wn-0uI"/>
+                    <constraint firstAttribute="trailing" secondItem="Hza-4e-3ra" secondAttribute="trailing" id="wkm-fS-zNV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="Hza-4e-3ra" id="tRe-hl-CEU"/>
+            </connections>
+            <point key="canvasLocation" x="83.206106870229007" y="-58.098591549295776"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

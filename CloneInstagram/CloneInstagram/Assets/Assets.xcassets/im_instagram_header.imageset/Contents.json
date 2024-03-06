@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "im_instagram_header.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
